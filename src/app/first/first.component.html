@@ -1,0 +1,44 @@
+<div class="row background">
+    <div class="col ps-5 pe-5 dispt text-white">
+      <div class="ps-5 pe-5 dispc">
+        <h1 class="ps-5 ms-5 me-5 border-end border-5 border-white">
+            Learn to code by 
+            <span class="typewriter">watching others</span>
+        </h1>
+        <div class="ps-5 ms-5 me-5 border-end border-5 border-white">
+          See how experienced developers solve problem in real-time.
+          Watching scripted tutorials is great, but understanding how developers think 
+          is invaluable.
+        </div>
+      </div>
+    </div>
+    <div class="col ps-5 pe-5 dispt">
+      <div class="ps-5 pe-5 m-5 dispc">
+      <div class="text-center bg-purple text-white p-3 mb-3 rounded-3 shadow-lg">
+        <span class="fw-bold pe-2">try it free for 7 Days</span>
+        then $20/mo. thereafter
+      </div>
+      <div class="container bg-white p-3 rounded-3 shadow-lg">
+        <div class="m-3 p-2">
+          <input type="text" [(ngModel)]="fname" class="form-control form-control-lg" placeholder="First Name">
+        </div>
+        <div class="m-3">
+          <input type="text" [(ngModel)]="lname" class="form-control form-control-lg" placeholder="Last Name">
+        </div>
+        <div class="m-3">
+          <input type="email" [(ngModel)]="email" class="form-control form-control-lg" placeholder="Email">
+        </div>
+        <div class="m-3">
+          <input type="password" [(ngModel)]="pass" class="form-control form-control-lg" placeholder="Password">
+        </div>
+        <div class="d-grid m-3">
+          <button (click)="submit()" class="btn bg-green p-2 fw-bold text-white">CLAIM YOUR FREE TRIAL</button>
+        </div>
+        <div class="text-center fs-small">
+          By clicking on the button you are agreeing to our 
+          <span class="text-red pl-2">Terms and Conditions</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
