@@ -1,44 +1,49 @@
 <div class="row background">
-    <div class="col ps-5 pe-5 dispt text-white">
-      <div class="ps-5 pe-5 dispc">
-        <h1 class="ps-5 ms-5 me-5 border-end border-5 border-white">
-            Learn to code by 
-            <span class="typewriter">watching others</span>
+    <div class="col-md dispt text-white">
+      <div class="ps-xxl-5 pe-xxl-5 dispc">
+        <h1 class="ps-sm-5 ms-5 me-xl-5 typewriter">
+           <span> Welcome There! </span>
         </h1>
-        <div class="ps-5 ms-5 me-5 border-end border-5 border-white">
-          See how experienced developers solve problem in real-time.
-          Watching scripted tutorials is great, but understanding how developers think 
-          is invaluable.
+        <div class="ps-sm-5 ms-5 me-xl-5">
+          if you want to apply for Home Loan, We can help you check if you are eligible.
+          click on "Go To Form" and fill all the details, we will tell if you will be
+          eligible for the loan. It is just this easy, go on fill the form.
+        </div>
+        <div class="ps-sm-5 ms-5 me-xl-5 mt-3">
+          <button (click)="form()" class="btn bg-dark text-white fw-bold">
+            Go To Form
+          </button>
         </div>
       </div>
     </div>
-    <div class="col ps-5 pe-5 dispt">
-      <div class="ps-5 pe-5 m-5 dispc">
-      <div class="text-center bg-purple text-white p-3 mb-3 rounded-3 shadow-lg">
-        <span class="fw-bold pe-2">try it free for 7 Days</span>
-        then $20/mo. thereafter
-      </div>
-      <div class="container bg-white p-3 rounded-3 shadow-lg">
-        <div class="m-3 p-2">
-          <input type="text" [(ngModel)]="fname" class="form-control form-control-lg" placeholder="First Name">
+    <div class="col-md dispt">
+      <div class="ps-xxl-5 pe-xxl-5 dispc">
+        <h1 class="ps-sm-5 ms-5 me-xl-5 typewriter">
+           <span> Know about Us </span>
+        </h1>
+        <div class="ps-sm-5 ms-5 me-xl-5">
+          We check your eligibility for a home loan. All you need to do is fill details
+          like Gender, Marital Status, Education, Number of Dependents, Income,
+          Loan Amount, Credit History, etc, and we tell you if you will get your home Loan 
+          or not 
         </div>
-        <div class="m-3">
-          <input type="text" [(ngModel)]="lname" class="form-control form-control-lg" placeholder="Last Name">
+        <div (click)="more()" class="ps-sm-5 ms-5 me-xl-5 mt-3">
+          <button class="btn bg-white fw-bold">
+            Know More
+          </button>
         </div>
-        <div class="m-3">
-          <input type="email" [(ngModel)]="email" class="form-control form-control-lg" placeholder="Email">
-        </div>
-        <div class="m-3">
-          <input type="password" [(ngModel)]="pass" class="form-control form-control-lg" placeholder="Password">
-        </div>
-        <div class="d-grid m-3">
-          <button (click)="submit()" class="btn bg-green p-2 fw-bold text-white">CLAIM YOUR FREE TRIAL</button>
-        </div>
-        <div class="text-center fs-small">
-          By clicking on the button you are agreeing to our 
-          <span class="text-red pl-2">Terms and Conditions</span>
-        </div>
-      </div>
+        <div *ngIf="know" class="mt-3 ps-sm-5 ms-5 me-xl-5 fw-bold">
+          This Product has been created by UnderGrad Students of SRM University
+          <ul>
+          <li>Utkarsh Sinha</li>
+          <li>Daksh Patel</li>
+          <li>Hardik Garg</li>
+          <li>Rudratej Singh Tanwar</li>
+          <li>Shreyash Anchaliya</li>
+          <li>Aditya Sinha</li>
+          </ul>
+        <div>
+
       </div>
     </div>
   </div>

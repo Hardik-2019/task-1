@@ -1,30 +1,98 @@
-<div class="background">
-    <div class="text-white fs-3 pt-5 text-center pb-3">Choose a coder as your mentor</div>
-    <table class="table table-no-border text-white container">
-        <thead>
-        <tr class="no-border">
-            <th scope="col">Id</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Website</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor="let val of vals">
-            <th scope="row">{{val.id}}</th>
-            <td>{{val.name}}</td>
-            <td>{{val.email}}</td>
-            <td>{{val.website}}</td>
-        </tr>
-        </tbody>
-    </table>
-    <div class="grid mt-5">
+<div class="background ps-sm-5 ms-sm-5 pe-5">
+    <div class="text-white fs-3 pt-3 text-center ps-5 ms-lg-5">Fill the form to know your eligibility</div>
+    <div class="grid ps-5 ms-lg-5 text-white">
+        <!-- <div class="row"> -->
+            <div class="pt-3 form-check-inline">Gender</div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div><br>
+
+            <div class="pt-3 form-check-inline">Marrital Status</div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Married</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Unmarried</label>
+            </div>
+
+            <select class="pt-3 form-select trans-bg no-border text-white" aria-label="Default select example">
+                <option class="text-dark bg-pink" selected>Dependents</option>
+                <option class="text-dark bg-pink" value="1">0</option>
+                <option class="text-dark bg-pink" value="2">1</option>
+                <option class="text-dark bg-pink" value="1">2</option>
+                <option class="text-dark bg-pink" value="2">3+</option>
+            </select>
+
+            <select class="pt-3 form-select trans-bg no-border text-white" aria-label="Default select example">
+                <option class="text-dark bg-pink" selected>Education</option>
+                <option class="text-dark bg-pink" value="1">Graduate</option>
+                <option class="text-dark bg-pink" value="2">Not Graduate</option>
+            </select>
+
+            <div class="pt-3 form-check-inline">Self Employed</div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+            </div>
+
+            <div class="pt-3">Applicant Income</div>
+            <div class="input-group mb-3">
+                <span class="input-group-text trans-bg text-white no-border">Rs.</span>
+                <input type="text" class="form-control trans-bg text-white no-border" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text trans-bg text-white no-border">per/month</span>
+            </div>
+
+            <div class="pt-3">Co-applicant Income</div>
+            <div class="input-group mb-3">
+                <span class="input-group-text trans-bg text-white no-border">Rs.</span>
+                <input type="text" class="form-control trans-bg text-white no-border" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text trans-bg text-white no-border">per/month</span>
+            </div>
+
+            <div class="pt-3">Loan Amount</div>
+            <div class="input-group mb-3">
+                <span class="input-group-text trans-bg text-white no-border">Rs.</span>
+                <input type="text" class="form-control trans-bg text-white no-border" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text trans-bg text-white no-border">per/month</span>
+            </div>
+
+            <div class="pt-3">Loan Amount Term</div>
+            <div class="input-group mb-3">
+                <span class="input-group-text trans-bg text-white no-border">Rs.</span>
+                <input type="text" class="form-control trans-bg text-white no-border" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text trans-bg text-white no-border">per/month</span>
+            </div>
+            <!-- <div class="col-2"></div>
+            <div class="col-sm-4 text-white">
+                <Label class="fw-bold">Tell us your gender</Label>
+            </div>
+            <span class="col-2">
+                <input type="text">
+            </span> -->
+            <!-- <label>Gender</label>
+            <input> -->
+        <!-- </div> -->
+    </div>
+    <!-- <div class="col-2">
+        <img src="../../assets/undraw_coming_home_52ir.svg">
+    </div> -->
+    <div class="grid mt-3">
         <div class="row">
             <div class="col-2"></div>
             <div class="col-3">
                 <button (click)="back()" class="btn bg-white fw-bold">Back</button>
             </div>
-            <div class="col-4"></div>
             <div class="col-3">
                 <button class="btn bg-white fw-bold">Proceed</button>
             </div>

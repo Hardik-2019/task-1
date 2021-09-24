@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./first.component.scss']
 })
 export class FirstComponent implements OnInit {
-
+  know=false
   fname
   lname
   email
@@ -19,6 +19,14 @@ export class FirstComponent implements OnInit {
    }
 
   ngOnInit(): void {
+  }
+
+  more(){
+    this.know==false?this.know=true:this.know=false;
+  }
+
+  form(){
+    this.router.navigate(['users'])
   }
 
   submit(){
